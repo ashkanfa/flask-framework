@@ -1,0 +1,11 @@
+<form action="/display" method = "POST">
+  <label for="stock">Stock Ticker:</label>
+  <input type="text" id="stock" name="stock" value="AAPL"><br><br>
+  <label for="months">In the last three months, which month do you like to see the selected stock:</label>
+    <select id="months" name="months">
+      <option value={{months_to_display[0]}}>{{months_to_display[0]}}</option>
+      <option value={{months_to_display[1]}}>{{months_to_display[1]}}</option>
+      <option value={{months_to_display[3]}}>{{months_to_display[2]}}</option>
+    </select><br><br>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
